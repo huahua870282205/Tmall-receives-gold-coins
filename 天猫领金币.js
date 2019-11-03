@@ -15,17 +15,17 @@ if (height == 1920) { //设置脚本坐标点击所适合的屏幕宽高。
 function lingqu(){
     click(547,1264);//点猫  领金币
 
-// //浏览15秒领金币
-sleep(1800);
+// //浏览16秒领金币
+sleep(1600);
 click(911,1716);
 
-sleep(1800);
+sleep(1600);
 if(text("签到").exists()){
     text("签到").findOne().click();
     sleep(1600);
     toast("签到成功")
 }
-sleep(1800);
+sleep(1600);
 while(text("去进店").exists()){
     //要支持的动作
     toast("存在去进店");
